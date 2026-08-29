@@ -6,39 +6,61 @@
         <title>Aula 2</title>
     </head>
     <body>
+        <header>
         <h1>Aula 1</h1>
+        </header>
 
+        <nav> <!-- lista de navegação-->
+            <ul> <!-- lista não ordenada-->
+                <li><a href="#paragrafo">Parágrafos</a></li> 
+                <li><a href="#lista">Listas</a></li>
+                <li><a href="#link">Links</a></li>
+                <li><a href="#imagem">Imagens</a></li>
+                <li><a href="#link">Links</a></li>
+                <li><a href="#tabela">Tabelas</a></li>
+                <li><a href="#div">Div</a></li>
+            </ul>
+        </nav>
+
+        <main> <!-- partes principais de uma pagina-->
+        <section id="paragrafo">
         <h2>Parágrafos</h2>
 
         <p>Este é um parágrafo. "p"</p>
         <p>Este é um outro parágrafo.</p>
-        
+        </section>
+
+        <section id="lista">
         <h2>Listas</h2>
         <h3>Lista não ordenada "ul"</h3>
         <ul>
             <li>Primeiro item "li"</li>
             <li>Outro item</li>
             <li>
-                <ul>
-                    <li>Outro item 1</li>
-                    <Li>Outro item 2 </Li>
-                </ul>
-            </li>
+        <ul>
+            <li>Outro item 1</li>
+            <Li>Outro item 2 </Li>
         </ul>
+        </li>
+        </ul>
+
         <h3>Lista ordenada "ol"</h3>
         <ol>
             <li>Item 1</li>
             <li>Item 2</li>
         </ol>
+
         <h3>Lista de Definição "dl, dt, dd"</h3>
         <dl>
             <dt>Aula 01</dt>
             <dd>Git e Github</dd>
-                <p></p>
+            <p></p>
             <dt>Aula 02</dt>
             <dd>Estrutura HTML</dd>
         </dl>
+        </section>
 
+        <section id="link">          
         <h2>Links</h2>
 
         <a href="https://www.google.com/" target="_blank">Site Google</a> 
@@ -46,21 +68,61 @@
         <a href="giphy.gif" target="_blank">Gif 6&7</a>
         <p></p>
         <a href="C:\Users\aluno.ingressante\Pictures\kasparov.jfif" target="_blank">Kasparov</a>
-        
+        </section>
+
+        <section id="imagem">     
         <h2>Imagens</h2>
 
+        <a href="https://fatecararas.cps.sp.gov.br/" target="_blank">
         <img src="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/19/2024/03/fatec-araras-antonio-brambilla.png" alt="Logo da FATEC Araras">
-        
-        
+        </a>
+        </section>
 
+        <section id="tabela">          
+        <h2>Tabelas</h2>
 
-        
-        
+        <table border="1">
+            <thead> <!-- tabela, cabeçalho -->
+                <tr> <!-- tabela, row (linha) -->
+                    <th scope="col"> Perfil </th> <!--th = tabela header-->
+                    <th scope="col"> Aluno </th>
+                    <th scope="col"> Sobrenome </th>
+                    <th scope="col"> Idade </th>
+                </tr>
+            </thead>
+            <tbody> <!-- tabela, corpo -->
+               <tr>
+                    <td rowspan="2"> Aluno </td>  <!-- td = tabela date (coluna)-->
+                    <td> Paulo </td>
+                    <td> Ribeiro </td>
+                    <td> 20 </td>
+                </tr>
+                <tr>
+                    <td> Caio </td>
+                    <td> Menezes </td>
+                    <td> 30 </td>
+                </tr>
+            </tbody>
+            <tfoot> <!-- tabela, rodapé -->
+                <th scope="row" colspan="3"> Total</th> 
+                <td> 50 </td>
+            </tfoot>
+       </table>
+       </section>
 
+       <section id="div">
+       <h2> Div </h2>
+
+       <div>
+        <p> Teste </p>
+        <p> Outro </p>
+       </div>
+       </section>
+
+    </main>
+        <footer> 
+            <p> Aula de desenvolvimento web </p>
+        </footer>
     </body>
-
-
-
-
 
 </html>
