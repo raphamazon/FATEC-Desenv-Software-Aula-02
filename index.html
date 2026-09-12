@@ -4,13 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport"content="width=device-width, initial-scale=1.0">
         <title>Aula 2</title>
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            h2 {
+                color: red !important; 
+            } 
+
+        </style>
+    <!-- !important: manter padrão-->
     </head>
     <body>
         <header>
         <h1>Aula 1</h1>
         </header>
 
-        <nav> <!-- lista de navegação-->
+        <nav id="menu"> <!-- lista de navegação, refereciado menu para css--> 
             <ul> <!-- lista não ordenada-->
                 <li><a href="#paragrafo">Parágrafos</a></li> 
                 <li><a href="#lista">Listas</a></li>
@@ -23,8 +32,8 @@
         </nav>
 
         <main> <!-- partes principais de uma pagina-->
-        <section id="paragrafo">
-        <h2>Parágrafos</h2>
+        <section id="paragrafo" class="fundo-verde">
+        <h2 style="color: blue; text-decoration: underline;">Parágrafos</h2>
 
         <p>Este é um parágrafo. "p"</p>
         <p>Este é um outro parágrafo.</p>
@@ -119,9 +128,17 @@
        </div>
        </section>
 
+       <div style="display:inline-block; background-color: blue; height: 50px; width: 50px;">
+        teste
+        </div>
+
+       <div style="display:none; background-color: red; height: 50px; width: 50px;"> <!-- none esconde a linha na pagina web-->
+        teste 
+        </div>
+
     </main>
         <footer> 
-            <p> Aula de desenvolvimento web </p>
+            <p> Development for Red Gibbon Solutions</p>
         </footer>
     </body>
 

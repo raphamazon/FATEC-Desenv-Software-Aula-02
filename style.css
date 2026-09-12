@@ -1,0 +1,44 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+section {
+    background-color: rgb(240, 240, 157);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-width: 10px;
+    border-color: black;
+    border-style: groove;
+}
+
+section.fundo-verde {
+    background-color: rgb(126, 241, 126);
+}
+
+#menu {
+    background-color: gray;
+    display: inline-block;
+}
+
+#menu a { /* o menu "a" tem a cor amarela */
+    color: yellow;
+}
+
+#menu a:hover { /* ao passar o mouse fica vermelho */
+    color: red;
+}
+
+footer {
+    background-color: rgb(148, 6, 6);
+    color: silver;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-width: 5px;
+    border-color: black;
+    border-style: groove;
+    
+}
+
