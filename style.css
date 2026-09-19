@@ -19,7 +19,7 @@ section.fundo-verde {
 
 #menu {
     background-color: gray;
-    display: inline-block;
+    display: block;
 }
 
 #menu a { /* o menu "a" tem a cor amarela */
