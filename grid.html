@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GRID Layout</title>
+
+        <style>
+            #grid {
+                display: grid;
+                grid-template-columns: 100px 3fr 1fr;
+                grid-template-rows: 100px 40px auto 100px;
+                gap: 20px;
+                grid-template-areas: /*qualificar os blocos */
+                    "cabecalho cabecalho cabecalho"
+                    "nav-p nav-p nav-p"
+                    "nav-s contenti publi"
+                    "rodape rodape rodape";
+                min-height: 100vh; /* altura minima padrão do bloco*/
+            }
+
+            header {
+                border-width: 1px;
+                border-style: solid;
+                grid-area: cabecalho;
+            }
+
+            footer {
+                border-width: 1px;
+                border-style: solid;
+                grid-area: rodape;
+            }
+
+            nav {
+                border-width: 1px;
+                border-style: solid;
+            }
+
+            #nav-principal {
+                grid-area: nav-p;
+            }
+
+            #nav-principal ul {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                gap: 10px;
+            }
+                     
+            div {
+                border-width: 1px;
+                border-style: solid;
+            }
+
+            #conteudo {
+                grid-area: contenti;
+            }
+
+            #nav-secundaria {
+                grid-area: nav-s;
+            }
+
+            #publicidade {
+                grid-area: publi;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="grid">
+            <header>
+                <h1>Grid Layout</h1>
+            </header>
+
+            <nav id="nav-principal">
+                <ul>
+                    <li>Nome</li>
+                    <Li>Contato</Li>
+                    <li>Cadastro</li>
+                </ul>
+            </nav>
+
+
+            <nav id="nav-secundaria">
+                <ul>
+                    <li>Nome</li>
+                    <li>Editar</li>
+                </ul>
+            </nav>
+
+            <div id="conteudo">
+                <p>Nosso Conteudo</p>
+            </div>
+
+            <div id="publicidade">
+                <p>Publicidade</p>
+            </div>
+
+    
+            <footer>
+                <h2>Rodapé</h2>
+            </footer>
+        </div>
+    </body>
+</html>
