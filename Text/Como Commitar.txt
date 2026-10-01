@@ -1,0 +1,80 @@
+C:\Users\aluno.ingressante\Downloads>dir
+ O volume na unidade C não tem nome.
+ O Número de Série do Volume é E4AD-783F
+
+ Pasta de C:\Users\aluno.ingressante\Downloads
+
+29/08/2026  09:46    <DIR>          .
+29/08/2026  09:46    <DIR>          ..
+07/08/2026  20:53        13.646.288 5d3a79f7-aae0-402a-9a76-388ab9a58cc3.tmp
+28/08/2026  19:01    <DIR>          Algoritmo
+25/08/2026  22:12    <DIR>          DSM22026
+28/08/2026  19:48           183.952 eng-software-i-aula-04b-requisitos.pdf
+07/08/2026  19:24            17.217 eoa.htm
+29/08/2026  09:47    <DIR>          FATEC-Desenv-Software-Aula-02
+07/08/2026  20:41        13.646.288 RobloxPlayerInstaller-DX4K7YGCD6.exe
+07/08/2026  20:41        13.646.288 RobloxPlayerInstaller-HBWRDWCHRX.exe
+               5 arquivo(s)     41.140.033 bytes
+               5 pasta(s)   273.794.826.240 bytes disponíveis
+
+C:\Users\aluno.ingressante\Downloads>cd FATEC-Desenv-Software-Aula-02
+
+C:\Users\aluno.ingressante\Downloads\FATEC-Desenv-Software-Aula-02>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\aluno.ingressante\Downloads\FATEC-Desenv-Software-Aula-02>git add *
+
+C:\Users\aluno.ingressante\Downloads\FATEC-Desenv-Software-Aula-02>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+C:\Users\aluno.ingressante\Downloads\FATEC-Desenv-Software-Aula-02>git commit -a "tabelas, div, semantico"
+fatal: paths 'tabelas, div, semantico ...' with -a does not make sense
+
+C:\Users\aluno.ingressante\Downloads\FATEC-Desenv-Software-Aula-02>git commit -m "tabelas, div, semantico"
+[main 8095d59] tabelas, div, semantico
+ Committer: Aluno Ingressante <aluno.ingressante@fatecararas.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 77 insertions(+), 15 deletions(-)
+
+C:\Users\aluno.ingressante\Downloads\FATEC-Desenv-Software-Aula-02>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\aluno.ingressante\Downloads\FATEC-Desenv-Software-Aula-02>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.41 KiB | 1.41 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/raphamazon/FATEC-Desenv-Software-Aula-02.git
+   e7f7722..8095d59  main -> main
